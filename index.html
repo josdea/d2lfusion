@@ -132,6 +132,67 @@ This is an image:
 
     <script src="./js/index.js"></script>
 
+<style>
+  #doorbell-button {
+    background-color: #117BB8;
+  }
+</style>
+<script type="text/javascript">
+  window.doorbellOptions = {
+    strings: {
+      "feedback-button-text": "send the presenter a question",
+      title: "Accessible Content with Markdown",
+  
+      "feedback-textarea-placeholder": "Need more information on this presentation or its content...",
+  
+      "email-input-placeholder": "Your email address",
+      tags: "fusion2017",
+      "submit-button-text": "Send",
+      "message-success": "Thanks, we will contact you as soon as possible!",
+      "message-error-missing-email": "Your email address is required",
+      "message-error-invalid-email": "Invalid email address",
+      "message-error-missing-message": "Your message is required",
+      "message-error-message-too-short": "Your message is too short"
+    },
+  
+    appKey: "M7lSIWcucfDnhDPrlx2X6Gy6aJ78pe0W81EnbMzU0Zwf8LQL6sUBuJ8jqBQH19F1"
+  };
+  (function(w, d, t) {
+    var hasLoaded = false;
+    function l() {
+      if (hasLoaded) {
+        return;
+      }
+      hasLoaded = true;
+      window.doorbellOptions.windowLoaded = true;
+      var g = d.createElement(t);
+      g.id = "doorbellScript";
+      g.type = "text/javascript";
+      g.async = true;
+      g.src = "https://embed.doorbell.io/button/4956?t=" + new Date().getTime();
+      (d.getElementsByTagName("head")[0] || d.getElementsByTagName("body")[0])
+        .appendChild(g);
+    }
+    if (w.attachEvent) {
+      w.attachEvent("onload", l);
+    } else if (w.addEventListener) {
+      w.addEventListener("load", l, false);
+    } else {
+      l();
+    }
+    if (d.readyState == "complete") {
+      l();
+    }
+  })(window, document, "script");
+  
+  function showDoorbellModal() {
+    doorbell.show(); // The doorbell object gets created by the doorbell.js script
+  }
+</script>
+<script>
+  document.getElementById("doorbell-powered-by").style.display = "none";
+</script>
+
 </body>
 
 </html>
