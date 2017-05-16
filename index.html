@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown Math Presentation - Reveal JS</title>
+
+
+    <link rel='stylesheet prefetch' href='./css/reveal.css'>
+    <link rel='stylesheet prefetch' href='./css/white.css'>
+    <link rel='stylesheet prefetch' href='./css/style.css'>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+
+
+</head>
+
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section id="stackedit" data-autoslide="276000">
+               <p>Accessible Math and Content Using Markdown</p>
+                <video width="95%" controls autoplay loop>
+  <source src="./assets/stackedit.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+            </section>
+            <section>
+                <h1 class="fragment" data-fragment-index="2"><small>Accessible Math Using Markdown</small></h1>
+                <blockquote>Create accessible documents and content that can be easily edited in Brightspace (D2L) and can be read by screenreaders.</blockquote>
+                <p class="fragment" data-fragment-index="2">\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\] </p>
+            </section>
+            <section id="what">
+                <h2 class="fragment" data-fragment-index="2">What is Markdown?</h2>
+                <blockquote>MarkDown is a text-to-HTML conversion tool. MarkDown allows you to write using an easy-to read, easy-to-write plain text format, then converts it to structurally valid XHTML (or HTML). <small>-daringfireball.net</small></blockquote>
+            </section>
+            <section id="look">
+                <h2 class="fragment" data-fragment-index="2">What Does Markdown Look Like?</h2>
+                <pre><code># This is a Heading 1
+
+## Lists (this is a heading 2)
+* Item 1 with *Italics*
+* Item 2 with **Bold**
+ * Sub-item 1
+* Item 3
+
+This is a link to Google:
+    [Google Search](google.com)
+This is an image:
+    ![alternate text goes here](/location/of/image.jpg)           
+           </code></pre>
+
+            </section>
+            <section id="why">
+                <h2 class="fragment" data-fragment-index="2">Why Markdown?</h2>
+                <p>Markdown is <em>plain-text</em>: margins, tab stops, page breaks, extra spacing, and formatting are all unsupported, ignored and therefore dropped. This is limiting but also helpful with <strong>accessibility</strong>. </p>
+
+            </section>
+            <section>
+                <h2 class="fragment" data-fragment-index="2">Why Markdown cont..</h2>
+                <p>Multiple spaces, or line breaks in a markdown file are ignored when converted to an HTML document. A Word document copied into a markdown editor is stripped of all formatting and flourishes. </p>
+                <p>Formatting and styles can be added once we have an HTML file, but Markdown lets you focus on <em>content first.</em></p>
+
+
+            </section>
+            <section>
+                <h2>Math Example</h2>
+                <p>Right click on the math formula to see more options.</p>
+                <p>\[\int_0^3\left(\frac{x^3}4-2x^2-e^x\right)dx\]</p>
+                <div class="fragment">
+                    <hr>
+                    <p>Listen to the Jaws screenreader process the above formula:</p>
+                    <a target="_blank"udio controls>
+  <source src="./assets/mathexample.mp3" type="audio/mp3">
+  
+Your browser does not support the audio element.
+</audio>
+                </div>
+                <div class="fragment">
+                    <hr>
+                    <p>The above formula is written using <em>tex</em> or <em>latex</em> code. <code>\int_0^3\left(\frac{x^3}4-2x^2-e^x\right)dx</code></p>
+                    <p><small>Don't worry we don't need to learn <em>tex</em> code!</small></p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Wiris HTML Editor</h2>
+
+                <p>To edit and create our formulas we use the <a target="_blank" href="http://www.wiris.com/editor/demo/en/mathml-latex" target="_blank">Wiris editor</a>. This can also be used to copy equations that were previously made in MS Word using third-party plugins. Once we use the editor we have the <em>tex</em> code to paste into our markdown file.</p>
+                <img class="fragment" src="./assets/wiris.jpg" alt="screenshot of wiris editor webpage producing mathml and latex code">
+            </section>
+
+           <section id="further1">
+               <h2>Further Reading and Tools</h2>
+               <h3>Online Markdown Editors</h3>
+               <ul>
+                   <li><a target="_blank" href="https://stackedit.io/">Stackedit.io</a></li>
+                   <li><a target="_blank" href="http://dillinger.io/">Dillinger.io</a></li>
+                   
+          <li>A online <a target="_blank" href="http://thejoshdean.com/markdowneditor/">Markdown Previewer</a> that I wrote</li>
+               </ul>
+        
+           </section>
+           
+            <section>
+               <h2 id="further2">Further Reading and Tools cont...</h2>
+           
+               <h3>Further Reading</h3>
+               <ul>
+                   <li><a target="_blank" href="https://en.wikipedia.org/wiki/Markdown">Markdown on Wikipedia</a> - a history and more</li>
+                   <li><a target="_blank" href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown Guide</a> - by Github</li>
+           <li>Markdown<a target="_blank" href="http://www.tablesgenerator.com/markdown_tables">Table Generator</a> and manipulation</li>
+              <li><a target="_blank" href="https://blog.ghost.org/markdown/">More Markdown Tips and Tricks</a> - blog post</li>
+               </ul>
+           </section>
+           
+            <section>
+               <h2 id="further3">Further Reading and Tools cont...</h2>
+           
+               <h3>Desktop Applications</h3>
+               <ul>
+                  <li>A <a target="_blank" href="https://www.sitepoint.com/best-markdown-editors-windows/">list of desktop markdown editors</a> - Windows</li>
+                  <li>A <a target="_blank" href="http://www.applegazette.com/mac/best-markdown-editors-macos/">list of desktop markdown editors</a> - Mac / macOS</li>
+               </ul>
+           </section>
+        </div>
+    </div>
+
+
+    <script src='./js/reveal.js'></script>
+
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
