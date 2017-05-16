@@ -6,7 +6,7 @@
     // defaultTiming: 120,
     loop: true,
     slideNumber: true,
-    autoSlide: 7000,
+    autoSlide: 9000,
     autoSlideStoppable: true,
     hideAddressBar: true,
     transition: 'convex',
