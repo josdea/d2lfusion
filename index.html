@@ -26,16 +26,16 @@
 </video>
             </section>
             <section>
-                <h1 class="fragment" data-fragment-index="2"><small>Accessible Math Using Markdown</small></h1>
+                <h1><small>Accessible Math Using Markdown</small></h1>
                 <blockquote>Create accessible documents and content that can be easily edited in Brightspace (D2L) and can be read by screenreaders.</blockquote>
-                <p class="fragment" data-fragment-index="2">\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\] </p>
+                <p>\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\] </p>
             </section>
             <section id="what">
-                <h2 class="fragment" data-fragment-index="2">What is Markdown?</h2>
+                <h2>What is Markdown?</h2>
                 <blockquote>MarkDown is a text-to-HTML conversion tool. MarkDown allows you to write using an easy-to read, easy-to-write plain text format, then converts it to structurally valid XHTML (or HTML). <small>-daringfireball.net</small></blockquote>
             </section>
             <section id="look">
-                <h2 class="fragment" data-fragment-index="2">What Does Markdown Look Like?</h2>
+                <h2>What Does Markdown Look Like?</h2>
                 <pre><code># This is a Heading 1
 
 ## Lists (this is a heading 2)
@@ -52,19 +52,19 @@ This is an image:
 
             </section>
             <section id="why">
-                <h2 class="fragment" data-fragment-index="2">Why Markdown?</h2>
+                <h2>Why Markdown?</h2>
                 <p>Markdown is <em>plain-text</em>: margins, tab stops, page breaks, extra spacing, and formatting are all unsupported, ignored and therefore dropped. This is limiting but also helpful with <strong>accessibility</strong>. </p>
 
             </section>
             <section>
-                <h2 class="fragment" data-fragment-index="2">Why Markdown cont..</h2>
+                <h2>Why Markdown cont..</h2>
                 <p>Multiple spaces, or line breaks in a markdown file are ignored when converted to an HTML document. A Word document copied into a markdown editor is stripped of all formatting and flourishes. </p>
                 <p>Formatting and styles can be added once we have an HTML file, but Markdown lets you focus on <em>content first.</em></p>
 
 
             </section>
             <section id="example">
-                <h2>Math Example</h2>
+                <h2 id="math">Math Example</h2>
                 <p>Right click on the math formula to see more options.</p>
                 <p>\[\int_0^3\left(\frac{x^3}4-2x^2-e^x\right)dx\]</p>
                 <div class="fragment">
@@ -85,17 +85,20 @@ This is an image:
                 <h2>Wiris HTML Editor</h2>
 
                 <p>To edit and create our formulas we use the <a target="_blank" href="http://www.wiris.com/editor/demo/en/mathml-latex" target="_blank">Wiris editor</a>. This can also be used to copy equations that were previously made in MS Word using third-party plugins. Once we use the editor we have the <em>tex</em> code to paste into our markdown file.</p>
-                <img class="fragment" src="./assets/wiris.jpg" alt="screenshot of wiris editor webpage producing mathml and latex code">
+                <img src="./assets/wiris.jpg" alt="screenshot of wiris editor webpage producing mathml and latex code">
             </section>
 
             <section id="further1">
                 <h2>Further Reading and Tools</h2>
-                
+                <form action="https://codepen.io/pen/define" method="POST" target="_blank">
+                    <input type="hidden" name="data" value='{"title": "Markdown Math", "editors": "100", "html_pre_processor": "markdown", "css_external": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css", "js_external": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML", "head": "<meta name=\"viewport\" content=\"width=device-width\">", "css": "body{padding:5px;}", "html": "<!--<div class=\"container\">-->\n\n# Put Markdown Here\n\n\\\\(x^2+14 = 2\\\\)\n\n\<!--</div>-->"}'>
+                  
+                    <input type="submit" value="New Codepen with Markdown / Mathjax / Boostrap">
+                  </form>
                 <ul>
-                    <li><a target="_blank" href="https://stackedit.io/">Stackedit.io</a> - online markdown editor</li>
-                    <li><a target="_blank" href="http://dillinger.io/">Dillinger.io</a> - online markdown editor</li>
-<li><a target="_blank" href="https://www.mathjax.org/">MathJax Main Site</a>- math rendering engine</li>
                     <li>Our <a target="_blank" href="http://thejoshdean.com/markdowneditor/">Custom Markdown Previewer</a></li>
+                   
+                  
                     <li>Our <a target="_blank" href="https://josdea.github.io/markdowneditor/reference.html">Markdown Reference Sheet</a>- printable reference sheet</li>
                     <li>Our <a target="_blank" href="http://codepen.io/josdea/pen/eBdYpo">Chemistry Examples</a> - MathJax with mhchem package </li>
                     <li>Our Accessible <a target="_blank" href="https://github.com/josdea/htmltemplates">HTML Course Templates</a> for Brightspace (D2L).</li>
@@ -108,19 +111,27 @@ This is an image:
                 <h2 id="further2">Further Reading and Tools cont...</h2>
 
                 <h3>Further Reading</h3>
+                
                 <ul>
                     <li><a target="_blank" href="https://en.wikipedia.org/wiki/Markdown">Markdown on Wikipedia</a> - a history and more</li>
+                    <li><a target="_blank" href="https://www.mathjax.org/">MathJax Main Site</a>- math rendering engine</li>
                     <li><a target="_blank" href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown Guide</a> - by Github</li>
                     <li>Markdown<a target="_blank" href="http://www.tablesgenerator.com/markdown_tables">Table Generator</a> and manipulation</li>
                     <li><a target="_blank" href="https://blog.ghost.org/markdown/">More Markdown Tips and Tricks</a> - blog post</li>
+                    
+                    <li>Code for 'Head' Section of any webpage with math
+                        <ul></li><li><small><code>&#x3C;script type=&#x22;text/javascript&#x22; src=&#x22;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML&#x22;&#x3E;&#x3C;/script&#x3E;</code></small></li></ul></li>
                 </ul>
             </section>
 
             <section>
                 <h2 id="further3">Further Reading and Tools cont...</h2>
 
-                <h3>Desktop Applications</h3>
+                <h3>Applications</h3>
                 <ul>
+                        <li><a target="_blank" href="https://stackedit.io/">Stackedit.io</a> - online markdown editor</li>
+                        <li><a target="_blank" href="http://dillinger.io/">Dillinger.io</a> - online markdown editor</li>
+
                     <li>A <a target="_blank" href="https://www.sitepoint.com/best-markdown-editors-windows/">list of desktop markdown editors</a> - Windows</li>
                     <li>A <a target="_blank" href="http://www.applegazette.com/mac/best-markdown-editors-macos/">list of desktop markdown editors</a> - Mac / macOS</li>
                 </ul>
