@@ -1,1 +1,1 @@
-Presentation materials for D2L Fusion 2017 conference.
+Presentation materials for D2L Fusion 2018 conference - lightning round.
